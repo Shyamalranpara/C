@@ -3,7 +3,7 @@ int main(){
 
     int A;
     printf("Please enter your score: ");
-    scanf("%d\n ", &A);
+    scanf("%d", &A);
 
     switch (A)
     {

@@ -17,5 +17,4 @@ int main()
 
     (score>=50)?printf("your grade is :E\n"):printf("your grade is :F\n");
 
-
 }

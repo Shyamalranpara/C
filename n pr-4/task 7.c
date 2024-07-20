@@ -1,17 +1,21 @@
-
 #include <stdio.h>
 main(){
-   for (int i = 1; i <=5; i++)
-   {
-    for (int j = 1; j >= 5; j++)
+  int i,j;
+
+  for (int i = 1; i <=7; i++)
+  {
+    for (int j = 1; j <=5; j++)
     {
-      printf(" ");
+      if (j==1 || (i==1 && j<5) || (i==4 && j<5) || (j==5&& i>1&&i<4))
+      {
+        printf("* ",j);
+      }
+      else{
+        printf("  ");
+      }
     }
-    for (int k = 5; k >= i; k--)
-    {
-         printf("*  ",k);
-    }
-    printf("\n");
-   }
+     printf("\n");
+  }
+  
    
 }

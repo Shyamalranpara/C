@@ -8,7 +8,7 @@ int main()
     if (100>x)
     {
       printf("enter the maths marks: ");
-      scanf("%d\n",&x);
+      scanf("%d",&x);
     }
     else if (100>y)
     {

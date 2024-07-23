@@ -1,21 +1,15 @@
 #include <stdio.h>
-
-int main() {
-    int n = 5;
-    for(int i = 1; i <= n; i++) {
-        // Print leading spaces
-        for(int j = n; j > i; j--) {
-            printf("  ");
+main(){
+    for (int i = 5; i >= 1; i--){
+        for (int j = i; j >= 1; j--){
+            printf("  ",j);
         }
-        // Print decreasing numbers
-        for(int k = i; k > 1; k--) {
-            printf("%d ", k);
+        for (int j = i; j <= 5; j++){
+            printf("%d ",j);
         }
-        // Print increasing numbers
-        for(int l = 7; l <= i; l++) {
-            printf("%d ", l);
+        for (int j = 4; j >= i; j--){
+            printf("%d ",j);
         }
         printf("\n");
     }
-    return 0;
 }

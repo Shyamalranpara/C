@@ -1,21 +1,38 @@
 #include <stdio.h>
-main()
-{
-    int size,sum=0;
-    printf("Enter size of array : ");
-    scanf("%d",&size);
-    int arr[size];
-    for (int i = 0; i < size; i++)
-    {
-        printf("Enter number for arr[%d] : ",i);
-        scanf("%d",&arr[i]);
-    }
-    for (int j = 0; j < size; j++)
-    {
-        sum += arr[j];
+
+#define MAX_SIZE 100 // Maximum size for the arrays
+
+int main() {
+    int size;
+    int array1[MAX_SIZE], array2[MAX_SIZE], result[MAX_SIZE];
+
+    // Input the size of the arrays
+    printf("Enter the size of the arrays: ");
+    scanf("%d", &size);
+
+    // Input elements of array1
+    printf("Enter elements of array1:\n");
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &array1[i]);
     }
 
-    printf("size of arr: %d\n",size);
-    printf("sum of arr : %d\n",sum);
-    main();
+    // Input elements of array2
+    printf("Enter elements of array2:\n");
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &array2[i]);
+    }
+
+    // Perform addition and store in result array
+    for (int i = 0; i < size; i++) {
+        result[i] = array1[i] + array2[i];
+    }
+
+    // Display the result array
+    printf("Resultant array after addition:\n");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", result[i]);
+    }
+    printf("\n");
+
+    return 0;
 }

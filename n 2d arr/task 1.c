@@ -24,8 +24,6 @@ main()
     printf("sum of arr : %0.2f\n", sum);
     printf("average of arr : %0.2f\n", sum / size);
     main();
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 2ab6b2769d620eaccb3ba2fa82398cb7666d32f3
+

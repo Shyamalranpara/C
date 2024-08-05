@@ -12,4 +12,6 @@ int main()
     else{
          printf("The minimum value is:%d\n",y);
     }
+
+   
 }

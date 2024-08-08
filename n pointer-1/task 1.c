@@ -1,5 +1,3 @@
-// C program to print the square of array elements
-
 #include <stdio.h>
 
 int main()

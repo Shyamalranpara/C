@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <stdio.h>
 
 void performAddition(float a, float b);
@@ -177,4 +176,4 @@ void performModulus(int a, int b) {
         printf("Error: Division by zero is not allowed.\n");
     }
 }
->>>>>>> 33644e706dc3cae4f6a2287db4838b22c33a3bd5
+
